@@ -9,7 +9,7 @@ print("Precompiling Julia / SymbolicRegression.jl ...")
 m = PySRRegressor(
     niterations=1,
     populations=1,
-    maxsize=6,
+    maxsize=7,
     procs=0,
     multithreading=False,
     verbosity=0,
