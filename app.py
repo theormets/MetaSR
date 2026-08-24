@@ -2242,4 +2242,7 @@ with gr.Blocks(title="MetaSR — Metallurgical Symbolic Regression") as demo:
         )
 
 
-demo.launch(server_name="0.0.0.0", server_port=7860)
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", "7860")),
+)
