@@ -1,0 +1,77 @@
+{
+  "grammar_type": "cluster_specific",
+  "version": "2.0_unified",
+  "cluster_id": 6,
+  "family_label": "Mixed Mathematical Family",
+  "dominant_structure": "pattern_mixed_complex",
+  "equation_count": 192,
+  "threshold": 0.02,
+  "threshold_value": 3,
+  "structure_template": {
+    "template": "f(g(x))",
+    "description": "Composition of functions"
+  },
+  "operators": {
+    "weights": {
+      "/": 0.4575,
+      "^": 0.3261,
+      "+": 0.1855,
+      "*": 0.0309
+    },
+    "description": "Cluster-specific operator distribution"
+  },
+  "functions": {
+    "whitelist": [
+      "sqrt",
+      "tan",
+      "sin"
+    ],
+    "all_functions": {
+      "sqrt": 18,
+      "tan": 3,
+      "sin": 3,
+      "cos": 2,
+      "tanh": 1
+    },
+    "description": "Functions in cluster (threshold: 3)"
+  },
+  "exponents": {
+    "numeric": {
+      "priorities": {
+        "2": 0.6566,
+        "1/2": 0.1265,
+        "4": 0.0542,
+        "3": 0.0301,
+        "-1": 0.0301,
+        "1.768": 0.012,
+        "-1/2": 0.012,
+        "5": 0.012,
+        "-4": 0.006,
+        "0": 0.006
+      },
+      "total_count": 166
+    },
+    "symbolic": {
+      "frequencies": {},
+      "total_count": 0
+    }
+  },
+  "complexity_limits": {
+    "max_depth": 8,
+    "max_size": 30,
+    "max_operations": 12,
+    "max_terms": 8
+  },
+  "physical_constraints": {
+    "general": "Domain-specific metallurgical constraints",
+    "template": "f(g(x))",
+    "priority_operators": [],
+    "example_form": "",
+    "preferred_forms": "Hybrid: combinations of exp, log, poly"
+  },
+  "metadata": {
+    "source": "Cluster 6 structural analysis",
+    "specialization": "Optimized for Mixed Mathematical Family",
+    "template_guidance": "f(g(x))"
+  }
+}

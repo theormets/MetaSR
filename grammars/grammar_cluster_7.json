@@ -1,0 +1,78 @@
+{
+  "grammar_type": "cluster_specific",
+  "version": "2.0_unified",
+  "cluster_id": 7,
+  "family_label": "Logarithmic Family",
+  "dominant_structure": "pattern_pure_logarithmic",
+  "equation_count": 52,
+  "threshold": 0.02,
+  "threshold_value": 1,
+  "structure_template": {
+    "template": "a*log(b*x) + c",
+    "description": "Logarithmic"
+  },
+  "operators": {
+    "weights": {
+      "/": 0.651,
+      "^": 0.1879,
+      "+": 0.1208,
+      "*": 0.0403
+    },
+    "description": "Cluster-specific operator distribution"
+  },
+  "functions": {
+    "whitelist": [
+      "log",
+      "ln",
+      "sqrt",
+      "tan"
+    ],
+    "all_functions": {
+      "ln": 46,
+      "log": 13,
+      "sqrt": 6,
+      "tan": 1
+    },
+    "description": "Functions in cluster (threshold: 1)"
+  },
+  "exponents": {
+    "numeric": {
+      "priorities": {
+        "2": 0.4118,
+        "1/2": 0.2353,
+        "-1": 0.1176,
+        "-2/2": 0.0588,
+        "2/3": 0.0588,
+        "3/2": 0.0588,
+        "0.5": 0.0588
+      },
+      "total_count": 17
+    },
+    "symbolic": {
+      "frequencies": {
+        "o": 1,
+        "c": 1
+      },
+      "total_count": 2
+    }
+  },
+  "complexity_limits": {
+    "max_depth": 5,
+    "max_size": 30,
+    "max_operations": 8,
+    "max_terms": 8
+  },
+  "physical_constraints": {
+    "general": "Domain-specific metallurgical constraints",
+    "template": "a*log(b*x) + c",
+    "priority_operators": [],
+    "example_form": "",
+    "preferred_forms": "y = A*log(B*x) + C",
+    "domain_enforcement": "Ensure positive log arguments"
+  },
+  "metadata": {
+    "source": "Cluster 7 structural analysis",
+    "specialization": "Optimized for Logarithmic Family",
+    "template_guidance": "a*log(b*x) + c"
+  }
+}

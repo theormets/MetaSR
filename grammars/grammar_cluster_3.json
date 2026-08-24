@@ -1,0 +1,83 @@
+{
+  "grammar_type": "cluster_specific",
+  "version": "2.0_unified",
+  "cluster_id": 3,
+  "family_label": "Simple Algebraic",
+  "dominant_structure": "pattern_rational",
+  "equation_count": 78,
+  "threshold": 0.02,
+  "threshold_value": 1,
+  "structure_template": {
+    "template": "P(x)/Q(x)",
+    "description": "Rational function"
+  },
+  "operators": {
+    "weights": {
+      "/": 0.5153,
+      "^": 0.3493,
+      "+": 0.0961,
+      "*": 0.0393
+    },
+    "description": "Cluster-specific operator distribution"
+  },
+  "functions": {
+    "whitelist": [
+      "exp",
+      "sqrt",
+      "cos",
+      "sin",
+      "tan",
+      "ln"
+    ],
+    "all_functions": {
+      "exp": 11,
+      "cos": 7,
+      "sqrt": 6,
+      "sin": 2,
+      "tan": 2
+    },
+    "description": "Functions in cluster (threshold: 1)"
+  },
+  "exponents": {
+    "numeric": {
+      "priorities": {
+        "2": 0.6889,
+        "3": 0.1778,
+        "0.8": 0.0222,
+        "0.14": 0.0222,
+        "-2": 0.0222,
+        "4": 0.0222,
+        "1/2": 0.0222,
+        "0.25": 0.0222
+      },
+      "total_count": 45
+    },
+    "symbolic": {
+      "frequencies": {
+        "B": 3,
+        "n": 3,
+        "m": 1,
+        "N": 1
+      },
+      "total_count": 8
+    }
+  },
+  "complexity_limits": {
+    "max_depth": 4,
+    "max_size": 30,
+    "max_operations": 6,
+    "max_terms": 8
+  },
+  "physical_constraints": {
+    "general": "Domain-specific metallurgical constraints",
+    "template": "P(x)/Q(x)",
+    "priority_operators": [],
+    "example_form": "",
+    "preferred_forms": "y = (A*x + B)/(C*x + D)"
+  },
+  "metadata": {
+    "source": "Cluster 3 structural analysis",
+    "specialization": "Optimized for Simple Algebraic",
+    "template_guidance": "P(x)/Q(x)"
+  }
+}

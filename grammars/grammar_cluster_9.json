@@ -1,0 +1,70 @@
+{
+  "grammar_type": "cluster_specific",
+  "version": "2.0_unified",
+  "cluster_id": 9,
+  "family_label": "Trigonometric Family",
+  "dominant_structure": "pattern_pure_trigonometric",
+  "equation_count": 16,
+  "threshold": 0.02,
+  "threshold_value": 0,
+  "structure_template": {
+    "template": "a*sin(b*x) + c",
+    "description": "Periodic/angular"
+  },
+  "operators": {
+    "weights": {
+      "/": 0.6364,
+      "^": 0.2121,
+      "+": 0.1212,
+      "*": 0.0303
+    },
+    "description": "Cluster-specific operator distribution"
+  },
+  "functions": {
+    "whitelist": [
+      "sin",
+      "ln",
+      "sqrt",
+      "sinh",
+      "cos"
+    ],
+    "all_functions": {
+      "sin": 16,
+      "sqrt": 5,
+      "ln": 3,
+      "sinh": 3,
+      "cos": 2
+    },
+    "description": "Functions in cluster (threshold: 0)"
+  },
+  "exponents": {
+    "numeric": {
+      "priorities": {
+        "2": 1.0
+      },
+      "total_count": 6
+    },
+    "symbolic": {
+      "frequencies": {},
+      "total_count": 0
+    }
+  },
+  "complexity_limits": {
+    "max_depth": 6,
+    "max_size": 30,
+    "max_operations": 10,
+    "max_terms": 8
+  },
+  "physical_constraints": {
+    "general": "Domain-specific metallurgical constraints",
+    "template": "a*sin(b*x) + c",
+    "priority_operators": [],
+    "example_form": "",
+    "preferred_forms": "y = A*sin(B*x + C)"
+  },
+  "metadata": {
+    "source": "Cluster 9 structural analysis",
+    "specialization": "Optimized for Trigonometric Family",
+    "template_guidance": "a*sin(b*x) + c"
+  }
+}

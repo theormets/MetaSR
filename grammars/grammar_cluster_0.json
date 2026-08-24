@@ -1,0 +1,79 @@
+{
+  "grammar_type": "cluster_specific",
+  "version": "2.0_unified",
+  "cluster_id": 0,
+  "family_label": "Simple Algebraic",
+  "dominant_structure": "pattern_linear",
+  "equation_count": 243,
+  "threshold": 0.02,
+  "threshold_value": 4,
+  "structure_template": {
+    "template": "a*x + b",
+    "description": "Linear relationship"
+  },
+  "operators": {
+    "weights": {
+      "/": 0.3694,
+      "^": 0.275,
+      "+": 0.2279,
+      "*": 0.1277
+    },
+    "description": "Cluster-specific operator distribution"
+  },
+  "functions": {
+    "whitelist": [
+      "ln",
+      "exp",
+      "sqrt",
+      "sin",
+      "cos"
+    ],
+    "all_functions": {
+      "exp": 17,
+      "sqrt": 12,
+      "ln": 10,
+      "sin": 7,
+      "cos": 4
+    },
+    "description": "Functions in cluster (threshold: 4)"
+  },
+  "exponents": {
+    "numeric": {
+      "priorities": {
+        "2": 0.6238,
+        "3": 0.099,
+        "1/2": 0.0693,
+        "4": 0.0495,
+        "3/2": 0.0297,
+        "5": 0.0198,
+        "1/6": 0.0198,
+        "9/16": 0.0198,
+        "8/27": 0.0198,
+        "-0.034": 0.0099
+      },
+      "total_count": 101
+    },
+    "symbolic": {
+      "frequencies": {},
+      "total_count": 0
+    }
+  },
+  "complexity_limits": {
+    "max_depth": 4,
+    "max_size": 30,
+    "max_operations": 6,
+    "max_terms": 8
+  },
+  "physical_constraints": {
+    "general": "Domain-specific metallurgical constraints",
+    "template": "a*x + b",
+    "priority_operators": [],
+    "example_form": "",
+    "preferred_forms": "y = A*x + B"
+  },
+  "metadata": {
+    "source": "Cluster 0 structural analysis",
+    "specialization": "Optimized for Simple Algebraic",
+    "template_guidance": "a*x + b"
+  }
+}
